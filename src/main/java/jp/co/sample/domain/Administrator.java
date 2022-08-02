@@ -33,7 +33,11 @@ public void setPassword(String password) {
 
 @Override
 public String toString() {
-	return "Member [id=" + id + ", name=" + name + ", mailAddress=" + mailAddress + ", password=" + password + "]";
+	return "Administrator [id=" + id + ", name=" + name + ", mailAddress=" + mailAddress + ", password=" + password + "]";
 }
 
 }
+/**
+ * Administrator
+ * すべてのカラムに対応
+ */
