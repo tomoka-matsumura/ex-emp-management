@@ -18,8 +18,7 @@ public class AdministratorController {
 	
 	@ModelAttribute
 	public InsertAdministratorForm setUpInsertAdministratorForm() {
-		InsertAdministratorForm InsertAdministratorForm = new InsertAdministratorForm();
-		return InsertAdministratorForm;
+		return new InsertAdministratorForm();
 	}
 	
 	@RequestMapping("/toInsert")
@@ -27,14 +26,17 @@ public class AdministratorController {
 		return"administrator/insert";
 	}
 	
-	@RequestMapping("/insert")
-	public String Insert(InsertAdministratorForm form) {
-		 Administrator administrator = new Administrator();
-		 administrator.getId();
-		 administrator.getName();
-		 administrator.getMailAddress();
-		 administrator.getPassword();
-		 return ("/");
+	//@RequestMapping("/insert")
+	//public String Insert(InsertAdministratorForm form) {
+		// Administrator administrator = new Administrator();
+//		 administrator.getId();
+//		 administrator.getName();
+//		 administrator.getMailAddress();
+//		 administrator.getPassword();
+//		 return ("/");//
+		 
+		 
+		 
 		 
 	}
 	
@@ -47,4 +49,4 @@ public class AdministratorController {
 
 	
 
-}
+//}
