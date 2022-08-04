@@ -1,12 +1,14 @@
 package jp.co.sample.domain;
 
+import java.sql.Date;
+
 public class Employee {
 	
 	private Integer id;
 	private String name;
 	private String image;
 	private String gender;
-	private String hireDate;
+	private java.util.Date hireDate;
 	private String mailAddress;
 	private String zipCode;
 	private String address;
@@ -39,11 +41,11 @@ public class Employee {
 	public void setGender(String gender) {
 		this.gender=gender;
 	}
-	public String getHireDate() {
+	public java.util.Date getHireDate() {
 		return hireDate;
 	}
-	public void setHireDate(String hireDate) {
-		this.hireDate=hireDate;
+	public void setHireDate(Date date) {
+		this.hireDate=date;
 	}
 	public String getMailAddress() {
 		return mailAddress;
@@ -93,8 +95,11 @@ public class Employee {
 		return "Employee [id=" + id + ", name=" + name + ", image=" + image + ", gender=" + gender + ",hireDate=" +hireDate+ ",mailAddress=" + mailAddress + ",zipCode=" +zipCode+ ",address=" +address+ ",telephone=" + telephone+ ",salary=" + salary + ",characteristics=" + characteristics+ ",dependentsCount=" + dependentsCount+"]";
 	}
 	
+		
+	}
+	
 	
 	
 	
 
-}
+

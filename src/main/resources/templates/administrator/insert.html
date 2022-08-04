@@ -41,7 +41,8 @@
             <!-- ここから上を編集する必要はありません -->
 
             <!-- ここにモックのform要素を貼り付けます -->
-            <form method="post" action="login.html">
+            <form method="post" action="login.html"
+            th:action="@{/insert}"   th:object="${insertAdministratorForm}">
               <fieldset>
                 <legend>
                   管理者登録<br />(システムにログインできる管理者を登録します)
@@ -114,10 +115,10 @@
                   </div>
                 </div>
               </fieldset>
-            </form>
+           
             
-            th:action="@{/insert}"
-            th:object="${insertAdministratorForm}"
+            
+            </form>
 
             <!-- ここから下を編集する必要はありません -->
           </div>
